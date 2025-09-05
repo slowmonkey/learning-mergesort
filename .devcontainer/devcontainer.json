@@ -1,0 +1,22 @@
+{
+	"name": "Dotnet Dev Container",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"postCreateCommand": "dotnet restore",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.csharp",
+				"formulahendry.dotnet-test-explorer"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			}
+		}
+	},
+	"remoteUser": "vscode"
+}

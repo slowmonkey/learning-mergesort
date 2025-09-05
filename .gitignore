@@ -1,0 +1,71 @@
+# --- Build output ---
+bin/
+obj/
+out/
+
+# --- VS Code ---
+.vscode/
+.history/
+
+# --- Devcontainers ---
+.devcontainer/.cache/
+.devcontainer/.tmp/
+
+# If you have Docker volume mounts for devcontainers, ignore local state
+**/.devcontainer/local/
+
+# --- User-specific files ---
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- VS / Rider IDE folders ---
+.vs/
+.idea/
+
+# --- Logs ---
+*.log
+
+# --- NuGet ---
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# --- Other caches ---
+*.cache
+*.pdb
+*.mdb
+*.bak
+*.swp
+
+# --- Coverage & testing ---
+TestResult*/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+*.vspx
+*.trx
+*.tlog
+
+# --- Resharper / Rider ---
+_ReSharper*/
+*.DotSettings.user
+
+# --- OS files ---
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# --- Dotnet user secrets ---
+secrets.json
+
+# --- Devcontainer dependencies ---
+.devcontainer/docker-compose.override.yml
+
